@@ -32,7 +32,7 @@ function SignupModal() {
 
     await updateProfile(auth.currentUser, {
       displayName: name,
-      photoURL: `./assets/profilePictures/pfp7`
+      photoURL: "/assets/profilePictures/pfp7.png"
     });
 
     router.reload();
