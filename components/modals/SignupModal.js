@@ -41,7 +41,7 @@ function SignupModal() {
   }
 
   async function handleGuestSignIn() {
-    await signInWithEmailAndPassword(auth, "guest12345@gmail.com", "!ER@POL");
+    await signInWithEmailAndPassword(auth, "guest12220@gmail.com", "!ER@POL");
   }
 
   useEffect(() => {
