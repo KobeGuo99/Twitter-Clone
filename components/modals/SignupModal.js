@@ -50,7 +50,7 @@ function SignupModal() {
       //handle Redux actions
       dispatch(
         setUser({
-          username: currentUser.email.split("@")[0],
+          username: currentUser.displayName.split(" "),
           name: currentUser.displayName,
           email: currentUser.email,
           uid: currentUser.uid,
