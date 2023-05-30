@@ -33,7 +33,7 @@ function SignupModal() {
     await updateProfile(auth.currentUser, {
       displayName: name,
       photoURL: `./assets/profilePictures/pfp${Math.ceil(
-        Math.random() * 6
+        Math.random() * 7
       )}.png`,
     });
 
