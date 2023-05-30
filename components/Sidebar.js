@@ -48,7 +48,7 @@ function Sidebar() {
           <div
           onClick={handleSignOut} 
           className="hover:bg-white hover:bg-opacity-10 rounded-full cursor-pointer absolute bottom-0 flex justify-center items-center space-x-3 xl:p-3">
-            <img className="w-10 h-10 rounded-full object-cover" src={user.photoUrl || "/assets/gordon.png" }/>
+            <img className="w-10 h-10 rounded-full object-cover" src={user.photoUrl || "/assets/no-profile-picture.png" }/>
             <div className="hidden xl:inline">
               <h1 className="font-bold whitespace-nowrap">{user.name}</h1>
               <h1 className="text-gray-500">@{user.username}</h1>

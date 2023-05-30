@@ -5,19 +5,19 @@ import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { db } from "@/firebase";
 import React, { useState } from "react";
 import { unstable_useId } from "@mui/material";
+import Link from "next/link";
 
 function PostFeed() {
-
   const [tweets, setTweets] = useState([]);
 
   useEffect(() => {
-    const q = query(collection(db, "posts"), orderBy("timestamp","desc"));
+    const q = query(collection(db, "posts"), orderBy("timestamp", "desc"));
     const unsubscribe = onSnapshot(q, (snapshot) => {
       setTweets(snapshot.docs);
-    })
+    });
 
     return unsubscribe;
-  }, [])
+  }, []);
 
   return (
     <div className="sm:ml-16 xl:ml-80 max-w-2xl flex-grow border-gray-700 border-x">
@@ -25,8 +25,8 @@ function PostFeed() {
         Home
       </div>
       <TweetInput />
-      {tweets.map(tweet => {
-        return <Tweet key={tweet.id} data={tweet.data()} />
+      {tweets.map((tweet) => {
+        return <Tweet key={tweet.id} id={tweet.id} data={tweet.data()} />;
       })}
       <Tweet />
     </div>

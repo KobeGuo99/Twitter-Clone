@@ -1,22 +1,32 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+import { getApps, initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore"
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDH5dEK7PQo-rw2_C9dxbHYy282fQwC4B8",
-  authDomain: "twitter-clone-20a42.firebaseapp.com",
-  projectId: "twitter-clone-20a42",
-  storageBucket: "twitter-clone-20a42.appspot.com",
-  messagingSenderId: "53389711928",
-  appId: "1:53389711928:web:2fad846423690cab0964cd"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// const app = initializeApp(firebaseConfig);
+let app;
+if (typeof window !== 'undefined') { // check if window is defined
+  if (!getApps().length) { // check if app already initialized
+    app = initializeApp(firebaseConfig);
+  } else {
+    app = getApps()[0]; // if already initialized, use that one
+  }
+}
 
 export const db = getFirestore(app);
 export const auth = getAuth(app);
+export const storage = getStorage();
