@@ -29,7 +29,7 @@ function Trending() {
         <div className="p-3 relative">
           <DotsHorizontalIcon className="w-5 text-gray-600 absolute right-4" />
           <p className="text-xs text-gray-500">Trending in US</p>
-          <h1 className="text-[15px] font-bold">McDondalds</h1>
+          <h1 className="text-[15px] font-bold">McDonalds</h1>
           <p className="text-xs text-gray-500">178K Tweets</p>
         </div>
         <div className="p-3 relative">
