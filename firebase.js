@@ -17,15 +17,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-let app;
-if (typeof window !== 'undefined') { // check if window is defined
-  if (!getApps().length) { // check if app already initialized
-    app = initializeApp(firebaseConfig);
-  } else {
-    app = getApps()[0]; // if already initialized, use that one
-  }
-}
+const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app);
 export const auth = getAuth(app);
