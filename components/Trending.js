@@ -17,8 +17,8 @@ function Trending() {
         <div className="p-3 relative">
           <DotsHorizontalIcon className="w-5 text-gray-600 absolute right-4" />
           <p className="text-xs text-gray-500">Trending in US</p>
-          <h1 className="text-[15px] font-bold">China</h1>
-          <p className="text-xs text-gray-500">340K Tweets</p>
+          <h1 className="text-[15px] font-bold">Basketball</h1>
+          <p className="text-xs text-gray-500">130K Tweets</p>
         </div>
         <div className="p-3 relative">
           <DotsHorizontalIcon className="w-5 text-gray-600 absolute right-4" />
@@ -29,20 +29,20 @@ function Trending() {
         <div className="p-3 relative">
           <DotsHorizontalIcon className="w-5 text-gray-600 absolute right-4" />
           <p className="text-xs text-gray-500">Trending in US</p>
-          <h1 className="text-[15px] font-bold">China</h1>
-          <p className="text-xs text-gray-500">340K Tweets</p>
+          <h1 className="text-[15px] font-bold">McDondalds</h1>
+          <p className="text-xs text-gray-500">178K Tweets</p>
         </div>
         <div className="p-3 relative">
           <DotsHorizontalIcon className="w-5 text-gray-600 absolute right-4" />
           <p className="text-xs text-gray-500">Trending in US</p>
-          <h1 className="text-[15px] font-bold">China</h1>
-          <p className="text-xs text-gray-500">340K Tweets</p>
+          <h1 className="text-[15px] font-bold">Valorant</h1>
+          <p className="text-xs text-gray-500">58K Tweets</p>
         </div>
         <div className="p-3 relative">
           <DotsHorizontalIcon className="w-5 text-gray-600 absolute right-4" />
           <p className="text-xs text-gray-500">Trending in US</p>
-          <h1 className="text-[15px] font-bold">China</h1>
-          <p className="text-xs text-gray-500">340K Tweets</p>
+          <h1 className="text-[15px] font-bold">Anime</h1>
+          <p className="text-xs text-gray-500">41K Tweets</p>
         </div>
       </div>
 
@@ -68,14 +68,14 @@ function Trending() {
           <div className="flex space-x-3">
             <img
               className="w-11 h-11 object-cover rounded-full"
-              src="/assets/taylor-swift.png"
+              src="/assets/elon-musk.png"
             />
             <div>
               <div className="flex space-x-1">
-                <h1 className="font-bold">Taylor Swift</h1>
+                <h1 className="font-bold">Elon Musk</h1>
                 <BadgeCheckIcon className="w-[18px] text-blue-400" />
               </div>
-              <h1 className="text-[12px] text-gray-500 mt-1">@taylorswift13</h1>
+              <h1 className="text-[12px] text-gray-500 mt-1">@elonmusk</h1>
             </div>
           </div>
           <button className="bg-white text-black text-sm w-20 h-8 rounded-3xl font-bold">Follow</button>
@@ -84,14 +84,14 @@ function Trending() {
           <div className="flex space-x-3">
             <img
               className="w-11 h-11 object-cover rounded-full"
-              src="/assets/taylor-swift.png"
+              src="/assets/s0m.png"
             />
             <div>
               <div className="flex space-x-1">
-                <h1 className="font-bold">Taylor Swift</h1>
+                <h1 className="font-bold">NRG s0m</h1>
                 <BadgeCheckIcon className="w-[18px] text-blue-400" />
               </div>
-              <h1 className="text-[12px] text-gray-500 mt-1">@taylorswift13</h1>
+              <h1 className="text-[12px] text-gray-500 mt-1">@s0mcs</h1>
             </div>
           </div>
           <button className="bg-white text-black text-sm w-20 h-8 rounded-3xl font-bold">Follow</button>
